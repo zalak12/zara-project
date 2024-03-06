@@ -69,8 +69,9 @@
             <input type="number" placeholder="Enter postal code" required />
           </div>
         </div>
-        <a href="za1.html" <button style="background-color: olivegreen;"  onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Submit</button>
-        ></a>
+        <!--<button style="background-color: olivegreen;"  onclick="document.getElementById('id02').style.display='block'"
+        style="width:auto;">Submit</button>-->
+         <a href="za1.html" class="btn">Read more</a>
         </form>
     </section>
   </body>
@@ -175,7 +176,28 @@ body {
   color: #707070;
   font-size: 1rem;
 }
-.form button {
+  /*new button code*/
+  form a {
+    height: 55px;
+    width: 100%;
+    color:  #fff;
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    padding-top:14px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    border:none;
+    border-radius: 10px;
+    border-bottom: 2px solid #0c0606;
+    transition: all 0.2s ease;
+    background: rgb(130, 106, 251);
+  }
+  form a:hover{
+    background: rgb(88, 56, 250);
+  }
+/*.form button {
   height: 55px;
   width: 100%;
   color: #fff;
@@ -189,7 +211,7 @@ body {
 }
 .form button:hover {
   background: rgb(88, 56, 250);
-}
+}*/
 /*Responsive*/
 @media screen and (max-width: 500px) {
   .form .column {
